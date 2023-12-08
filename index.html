@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/cocacola3.png" />
+    <!-- Swiper Js CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+    <title>CocaCola</title>
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="images/logo.png" alt="logo" class="logo" /></a>
+        <div class="toggle"></div>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="text">
+          <h2>Taste The Feelings</h2>
+          <p>
+            Experience the iconic and timeless taste of Coca-Cola, a beverage
+            that goes beyond refreshment – it's a celebration in every sip. With
+            its crisp and bubbly nature, Coca-Cola is more than just a drink;
+            it's an invigorating burst of joy that tantalizes your taste buds
+            and leaves you feeling satisfied.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/cocacola1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/cocacola2.png" alt="" />
+              </div>
+              <div class="swiper-class">
+                <img src="images/cocacola3.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/cocacola4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/cocacola5.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/cocacola6.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="images/facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/instagram.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/twitter.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+    <script src="index.js"></script>
+    <!-- Slider -->
+    <script>
+      let swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
